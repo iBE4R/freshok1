@@ -4,6 +4,14 @@ $(function () {
     
   });
 
+   $('.brands__list').slick({
+     infinite: true,
+     dots: false,
+     arrows: false,
+     slidesToShow: 3,
+     slidesToScroll: 3
+  });
+
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
   var containerEl2 = document.querySelector('[data-ref="container-2"]');
 
