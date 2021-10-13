@@ -42,8 +42,7 @@
         <div class="container">
           <div class="header__inner">
             <a class="logo" href="#">
-              <img class="logo__img" width="200" height="60" fill="#fffff" src="images/sprite/sprite.svg#logo"
-                alt="Логотип">
+              <img class="logo__img" width="200" height="60" src="images/sprite.svg#logo" alt="Логотип">
             </a>
 
             <button class="header__btn" type="button">
@@ -122,12 +121,24 @@
               <button class="header__search-btn" type="submit">Поиск</button>
             </form>
 
+            <!-- Я тут оставил два варианта,свгшка в html и свгшка в css через bg image,как правильнее? -->
+
             <div class="user-nav">
-              <a class="user-nav__link nav-user" href="#"></a>
-              <a class="user-nav__link nav-heart" href="#">
+              <a class="user-nav__link" href="#">
+                <svg class="nav-user">
+                  <use xlink:href="images/sprite.svg#user-link"></use>
+                </svg>
+              </a>
+              <a class="user-nav__link" href="#">
+                <svg class="nav-heart">
+                  <use xlink:href="images/sprite.svg#icon-heart"></use>
+                </svg>
                 <span class="user-nav__num">12</span>
               </a>
-              <a class="user-nav__link nav-basket" href="#">
+              <a class="user-nav__link" href="#">
+                <svg class="nav-basket">
+                  <use xlink:href="images/sprite.svg#icon-carts"></use>
+                </svg>
                 <span class="user-nav__num">12</span>
               </a>
             </div>
@@ -139,7 +150,7 @@
 
   <main class="main">
 
-    <h1 class="sr-only">Что тут написать?!</h1>
+    <h1 class="sr-only">Что тут написать?</h1>
 
     <section class="top-slider">
       <ul class="top-slider__inner">
@@ -157,7 +168,7 @@
                   Только с 7 по 13 июля скидка на сезонные фрукты и овощи до 50%. Торопитесь!
                 </p>
               </div>
-              <a class="top-slider__link button" href="">
+              <a class="top-slider__link button" href="#">
                 Купить сейчас
               </a>
             </div>
@@ -259,10 +270,10 @@
                 </div>
 
                 <button class="goods__heart" type="button">
-                 <svg viewBox="0 0 32 29">
-                   <use xlink:href="images/sprite.svg#goods-icon-heart">
-                     <use>
-                 </svg>
+                  <svg viewBox="0 0 32 29">
+                    <use xlink:href="images/sprite.svg#goods-icon-heart">
+                      <use>
+                  </svg>
                   <span class="sr-only">Добавить в избранное</span>
                 </button>
               </div>
@@ -290,10 +301,10 @@
                 <div class="badges">
                 </div>
                 <button class="goods__heart" type="button">
-                 <svg viewBox="0 0 32 29">
-                   <use xlink:href="images/sprite.svg#goods-icon-heart">
-                     <use>
-                 </svg>
+                  <svg viewBox="0 0 32 29">
+                    <use xlink:href="images/sprite.svg#goods-icon-heart">
+                      <use>
+                  </svg>
                   <span class="sr-only">Добавить в избранное</span>
                 </button>
               </div>
@@ -320,10 +331,10 @@
                 </div>
 
                 <button class="goods__heart" type="button">
-                 <svg viewBox="0 0 32 29">
-                   <use xlink:href="images/sprite.svg#goods-icon-heart">
-                     <use>
-                 </svg>
+                  <svg viewBox="0 0 32 29">
+                    <use xlink:href="images/sprite.svg#goods-icon-heart">
+                      <use>
+                  </svg>
                   <span class="sr-only">Добавить в избранное</span>
                 </button>
               </div>
@@ -352,10 +363,10 @@
                 </div>
 
                 <button class="goods__heart" type="button">
-                 <svg viewBox="0 0 32 29">
-                   <use xlink:href="images/sprite.svg#goods-icon-heart">
-                     <use>
-                 </svg>
+                  <svg viewBox="0 0 32 29">
+                    <use xlink:href="images/sprite.svg#goods-icon-heart">
+                      <use>
+                  </svg>
                   <span class="sr-only">Добавить в избранное</span>
                 </button>
               </div>
@@ -383,10 +394,10 @@
                 </div>
 
                 <button class="goods__heart" type="button">
-                 <svg viewBox="0 0 32 29">
-                   <use xlink:href="images/sprite.svg#goods-icon-heart">
-                     <use>
-                 </svg>
+                  <svg viewBox="0 0 32 29">
+                    <use xlink:href="images/sprite.svg#goods-icon-heart">
+                      <use>
+                  </svg>
                   <span class="sr-only">Добавить в избранное</span>
                 </button>
               </div>
@@ -413,10 +424,10 @@
                 </div>
 
                 <button class="goods__heart" type="button">
-                 <svg viewBox="0 0 32 29">
-                   <use xlink:href="images/sprite.svg#goods-icon-heart">
-                     <use>
-                 </svg>
+                  <svg viewBox="0 0 32 29">
+                    <use xlink:href="images/sprite.svg#goods-icon-heart">
+                      <use>
+                  </svg>
                   <span class="sr-only">Добавить в избранное</span>
                 </button>
               </div>
@@ -447,10 +458,10 @@
                   <span class="badge new">новинка</span>
                 </div>
                 <button class="goods__heart" type="button">
-                 <svg viewBox="0 0 32 29">
-                   <use xlink:href="images/sprite.svg#goods-icon-heart">
-                     <use>
-                 </svg>
+                  <svg viewBox="0 0 32 29">
+                    <use xlink:href="images/sprite.svg#goods-icon-heart">
+                      <use>
+                  </svg>
                   <span class="sr-only">Добавить в избранное</span>
                 </button>
               </div>
@@ -479,7 +490,8 @@
                 </div>
                 <button class="goods__heart" type="button">
                   <svg viewBox="0 0 32 29">
-                    <use xlink:href="images/sprite.svg#goods-icon-heart"><use>
+                    <use xlink:href="images/sprite.svg#goods-icon-heart">
+                      <use>
                   </svg>
                   <span class="sr-only">Добавить в избранное</span>
                 </button>
@@ -585,7 +597,9 @@
                     </div>
                     <div class="promo__rating">
                       <span class="rating__num">4.5</span>
-                      <img class="rating__img" src="images/sprite/sprite.svg#star" alt="Звезда">
+                      <svg class="rating__img">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
                     </div>
                   </div>
                 </article>
@@ -612,7 +626,9 @@
                     </div>
                     <div class="promo__rating">
                       <span class="rating__num">4.9</span>
-                      <img class="rating__img" src="images/icons/star.svg" alt="Звезда">
+                      <svg class="rating__img">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
                     </div>
                   </div>
                 </article>
@@ -640,7 +656,9 @@
                     </div>
                     <div class="promo__rating">
                       <span class="rating__num">5.0</span>
-                      <img class="rating__img" src="images/icons/star.svg" alt="Звезда">
+                      <svg class="rating__img">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
                     </div>
                   </div>
                 </article>
@@ -667,7 +685,9 @@
                     </div>
                     <div class="promo__rating">
                       <span class="rating__num">5.0</span>
-                      <img class="rating__img" src="images/icons/star.svg" alt="Звезда">
+                      <svg class="rating__img">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
                     </div>
                   </div>
                 </article>
@@ -695,7 +715,9 @@
                     </div>
                     <div class="promo__rating">
                       <span class="rating__num">4.5</span>
-                      <img class="rating__img" src="images/icons/star.svg" alt="Звезда">
+                      <svg class="rating__img">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
                     </div>
                   </div>
                 </article>
@@ -723,7 +745,9 @@
                     </div>
                     <div class="promo__rating">
                       <span class="rating__num">4.9</span>
-                      <img class="rating__img" src="images/icons/star.svg" alt="Звезда">
+                      <svg class="rating__img">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
                     </div>
                   </div>
                 </article>
@@ -751,7 +775,9 @@
                     </div>
                     <div class="promo__rating">
                       <span class="rating__num">4.8</span>
-                      <img class="rating__img" src="images/icons/star.svg" alt="Звезда">
+                      <svg class="rating__img">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
                     </div>
                   </div>
                 </article>
@@ -779,7 +805,9 @@
                     </div>
                     <div class="promo__rating">
                       <span class="rating__num">4.6</span>
-                      <img class="rating__img" src="images/icons/star.svg" alt="Звезда">
+                      <svg class="rating__img">
+                        <use xlink:href="images/sprite.svg#star"></use>
+                      </svg>
                     </div>
                   </div>
                 </article>
@@ -795,6 +823,36 @@
     <div class="brands">
       <div class="container">
         <ul class="brands__list">
+          <li class="brands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/sprite.svg" alt="Логотип спрайт">
+            </a>
+          </li>
+          <li class="bands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/dr-pepper.svg" alt="Логотип доктор пеппер">
+            </a>
+          </li>
+          <li class="bands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/cola.svg" alt="Логотип кока-колы">
+            </a>
+          </li>
+          <li class="bands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/pepsi.svg" alt="Логотип пепси">
+            </a>
+          </li>
+          <li class="bands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/redbull.svg" alt="Логотип ред бул">
+            </a>
+          </li>
+          <li class="bands__item">
+            <a class="brands__link" href="#">
+              <img class="brands__img" src="images/brands/fanta.svg" alt="Логотип фанты">
+            </a>
+          </li>
           <li class="brands__item">
             <a class="brands__link" href="#">
               <img class="brands__img" src="images/brands/sprite.svg" alt="Логотип спрайт">
@@ -893,7 +951,7 @@
       <div class="footer-top">
         <div class="foote-top__item">
           <a class="logo" href="#">
-            <img class="logo__img" width="200" height="60" src="images/icons/logo.svg" alt="Логотип">
+            <img class="logo__img" width="200" height="60" src="images/sprite.svg#logo" alt="Логотип">
           </a>
         </div>
       </div>
@@ -977,29 +1035,41 @@
 
             <ul class="social">
               <li class="social__item">
-                <a class="social__link" href="https://www.facebook.com/"
-                  style="background-image: url('images/icons/facebook.svg')" target="_blank">
+                <a class="social__link" href="https://www.facebook.com/" target="_blank">
+                  <svg class="social__img">
+                    <use xlink:href="images/sprite.svg#facebook">
+                      <use>
+                  </svg>
                   <span class="sr-only">Открыть фейсбук</span>
                 </a>
               </li>
 
               <li class="social__item">
-                <a class="social__link" href="https://www.youtube.com"
-                  style="background-image: url('images/icons/youtube.svg')" target="_blank">
+                <a class="social__link" href="https://www.youtube.com" target="_blank">
+                  <svg class="social__img">
+                    <use xlink:href="images/sprite.svg#youtube">
+                      <use>
+                  </svg>
                   <span class="sr-only">Открыть ютуб</span>
                 </a>
               </li>
 
               <li class="social__item">
-                <a class="social__link" href="https://web.telegram.org"
-                  style="background-image: url('images/icons/telegram.svg')" target="_blank">
+                <a class="social__link" href="https://web.telegram.org" target="_blank">
+                  <svg class="social__img">
+                    <use xlink:href="images/sprite.svg#telegram">
+                      <use>
+                  </svg>
                   <span class="sr-only">Открыть телеграм</span>
                 </a>
               </li>
 
               <li class="social__item">
-                <a class="social__link" href="https://www.instagram.com"
-                  style="background-image: url('images/sprite/sprite.svg#instagram');" target="_blank">
+                <a class="social__link" href="https://www.instagram.com" target="_blank">
+                  <svg class="social__img">
+                    <use xlink:href="images/sprite.svg#instagram">
+                      <use>
+                  </svg>
                   <span class="sr-only">Открыть инстаграм</span>
                 </a>
               </li>
@@ -1012,9 +1082,15 @@
           © 2021 ФРЕШОК
         </span>
         <div class="footer-bottom__pay">
-          <img class="footer-bottom__pay-img" width="93" height="29" src="images/sprite/sprite.svg#visa"
-            alt="Принимаем Виза">
-          <img class="footer-bottom__pay-img" src="images/icons/mastercard.svg" alt="Принимаем МастерКард">
+          <svg class="footer-bottom__img">
+            <use xlink:href="images/sprite.svg#visa">
+              <use>
+          </svg>
+
+          <svg class="footer-bottom__img">
+            <use xlink:href="images/sprite.svg#mastercard">
+              <use>
+          </svg>
         </div>
       </div>
     </div>

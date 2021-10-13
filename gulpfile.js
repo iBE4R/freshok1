@@ -11,7 +11,7 @@ const svgSprite    = require('gulp-svg-sprite');
 const fileinclude  = require('gulp-file-include');
 
 function svgsprite() {
-  return src('app/images/icons/*.svg')
+  return src('app/images/icons/**/*.svg')
     .pipe(svgSprite({
       mode: {
         stack: {
@@ -100,7 +100,7 @@ function watching() {
   watch(['app/index.html'], fileinclude);
   watch(['app/js/**/*.js', '!app/js/main.min.js'], scripts);
   watch(['app/**/*.html']).on('change', browserSync.reload);
-  watch(['app/images/**.svg', '!app/images/sprite.svg'], svgsprite);
+  watch(['app/images/icons/**/*.svg'], svgsprite);
 }
 
 exports.styles = styles;

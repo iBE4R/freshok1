@@ -8,8 +8,8 @@ $(function () {
      infinite: true,
      dots: false,
      arrows: false,
-     slidesToShow: 3,
-     slidesToScroll: 3
+     slidesToShow: 6,
+     slidesToScroll: 1
   });
 
   var containerEl1 = document.querySelector('[data-ref="container-1"]');
